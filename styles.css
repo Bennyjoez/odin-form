@@ -80,7 +80,7 @@ img {
 
 .form-controls {
     background-color: whitesmoke;
-    padding: 10px;
+    padding: 20px;
     box-shadow: 0 4px 04px gray;
     border-radius: 5px;
     max-width: 700px;
@@ -113,4 +113,76 @@ span.asterisk {
     color: rgb(255, 3, 3);
 }
 
+h2 {
+    margin-bottom: 20px;
+}
+
+.submit-btn {
+    position: relative;
+}
+
+.submit-btn button {
+    position: absolute;
+    top: 50px;
+    padding: 8px;
+    background-color: rgb(83, 4, 80);
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+    border: none;
+}
+.submit-btn button:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 2px skyblue;
+}
+.inner-container {
+    padding: 20px;
+}
+
 /* Pseudo-classes */
+/* media query */ 
+@media (max-width: 500px) {
+    .container {
+        flex-direction: column;
+        min-width: 400px;
+    }
+
+    .logo {
+        width: 100%;
+        padding: 20px 0;
+    }
+    .joez-photozz-logo {
+        position: static;
+    }
+    .credit {
+        position: static;
+        width: 100%;
+    }
+
+    .introduction, .form-controls, .inner-container{
+        max-width: 300px;
+    }
+
+    .inner-container {
+        margin: auto;
+    }
+
+    .introduction p {
+        width: fit-content;
+    }
+
+}
+
+@media (max-width: 800px) {
+    .introduction, .form-controls, .inner-container{
+        max-width: 400px;
+    }
+
+    .inner-container {
+        margin: auto;
+    }
+
+    .introduction p {
+        width: fit-content;
+    }
+}
