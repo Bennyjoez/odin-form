@@ -68,7 +68,8 @@ img {
     background-color: antiquewhite;
     margin-bottom: 50px;
     padding: 10px;
-    max-width: fit-content;
+    max-width: 700px;
+    min-width: 300px;
 }
 
 .introduction p {
@@ -83,22 +84,33 @@ img {
     box-shadow: 0 4px 04px gray;
     border-radius: 5px;
     max-width: 700px;
-    min-width: 500px;
+    min-width: 300px;
 }
 
 label {
     width: 200px;
     text-align: right;
     background-color: aqua;
-    padding: 0 10px;
+    padding: 5px 15px;
 }
 
 input {
-    margin: 10px 0;
+    appearance: none;
+    margin: 20px 0;
+    padding: 5px;
     height: 25px;
     width: 200px;
+    border-radius: 3px;
+    border: 1px solid gray;
 }
 
 .inputs {
-    display: inline-block
+    display: inline-block;
+    width: 250px;
 }
+
+span.asterisk {
+    color: rgb(255, 3, 3);
+}
+
+/* Pseudo-classes */
