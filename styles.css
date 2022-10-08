@@ -179,6 +179,11 @@ input:focus:invalid {
     .introduction p {
         width: fit-content;
     }
+    .submit-btn button {
+        position: static;
+        width: 80%;
+        
+    }
 
 }
 
