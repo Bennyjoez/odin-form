@@ -30,10 +30,19 @@ function confirm() {
                 passwordConfirmMessage.classList.remove("password-dontmatch-css");
                 passwordConfirmMessage.classList.add('password-match-css');
             } else {
-                passwordConfirmMessage.textContent = "Password don't match";
                 passwordConfirmMessage.classList.remove("password-match-css");
-                passwordConfirmMessage.classList.add('password-dontmatch-css');
+                passwordConfirmMessage.classList.remove('password-dontmatch-css')
+                if(confirmPassword.length > accountPassword.length) {
+                    passwordConfirmMessage.textContent = "Password don't match(It is longer!)";
+                    passwordConfirmMessage.classList.add('password-dontmatch-css');
+                } else {
+                    passwordConfirmMessage.textContent = "Password characters don't match";
+                    passwordConfirmMessage.classList.add('password-dontmatch-css');
+                }
             }
+        } else {
+            passwordConfirmMessage.classList.remove('password-match-css')
+            passwordConfirmMessage.classList.remove('password-dontmatch-css')
         }
     } 
 }
