@@ -11,15 +11,20 @@ function alertStatus() {
 }
 
 passwordConfirm.addEventListener('keyup', confirm);
+passwordConfirm.addEventListener('change', confirm)
+password.addEventListener('change', confirm);
 
 function confirm() {
     const accountPassword = password.value;
     const confirmPassword = passwordConfirm.value;
+    passwordConfirmMessage.textContent = '';
+    passwordConfirmMessage.classList.remove('password-match-css')
+    passwordConfirmMessage.classList.remove('password-match-css')
 
     if(accountPassword != '') {
         const accountPassword = password.value;
         passwordConfirm.setAttribute('pattern', `${accountPassword}`)
-        if(confirmPassword.length === accountPassword.length) {
+        if(confirmPassword.length >= accountPassword.length) {
             if(confirmPassword === accountPassword) {
                 passwordConfirmMessage.textContent = 'Passwords match';
                 passwordConfirmMessage.classList.remove("password-dontmatch-css");
@@ -31,6 +36,4 @@ function confirm() {
             }
         }
     } 
-
-
 }
