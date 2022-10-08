@@ -144,6 +144,14 @@ h2 {
     font-size: 1.1rem;
 }
 
+.login a {
+    text-decoration: none;
+    font-weight: bold;
+}
+.login a:hover {
+    font-size: 1.2rem;
+}
+
 /* Pseudo-classes */
 input:valid {
     background-color: rgba(5, 250, 58, 0.3);
