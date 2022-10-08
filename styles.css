@@ -139,6 +139,11 @@ h2 {
     padding: 20px;
 }
 
+.login {
+    margin-top: 80px;
+    font-size: 1.1rem;
+}
+
 /* Pseudo-classes */
 input:valid {
     background-color: rgba(5, 250, 58, 0.3);
@@ -182,7 +187,10 @@ input:focus:invalid {
     .submit-btn button {
         position: static;
         width: 80%;
-        
+    }
+
+    .login {
+        margin-top: 20px;
     }
 
 }
@@ -198,5 +206,9 @@ input:focus:invalid {
 
     .introduction p {
         width: fit-content;
+    }
+
+    .login {
+        margin-top: 70px;
     }
 }
